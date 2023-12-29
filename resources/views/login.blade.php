@@ -1,12 +1,6 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  @vite('resources/css/app.css')
-</head>
-<body>
-  <div class="flex flex-col items-center justify-center px-6 mx-auto md:h-screen pt:mt-0 dark:bg-gray-900">
+@extends('auth.main')
+@section('container')
+<div class="flex flex-col items-center justify-center px-6 mx-auto md:h-screen pt:mt-0 dark:bg-gray-900">
     <a href="/" class="flex items-center justify-center mb-8 text-2xl font-semibold lg:mb-10 dark:text-white">
         <img src="{{ asset('storage/images/logo.png') }}" class="mr-4 h-20" alt="My Shoes Logo">
         <span>MY SHOES</span>
@@ -32,5 +26,4 @@
         </form>
     </div>
 </div>
-</body>
-</html>
+@endsection
